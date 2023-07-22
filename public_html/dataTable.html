@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Table</title>
+        <!-- Google Font: Source Sans Pro -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+        <script src="plugins/jquery/jquery.min.js"></script>
+        <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>        
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="plugins/jquery-validation/jquery.validate.min.js"></script>        
+        <script src="plugins/jquery-validation/additional-methods.min.js"></script>
+        <script src="dist/js/adminlte.min.js"></script>        
+        <script src="dist/js/demo.js"></script>
+        <script>hdPageId = "employee";</script>
+        <script>
+            var myStatus = "in";
+        </script>
+        <!--<script type="text/javascript" src="resources/js/my-jpdb-commons.js"></script>-->
+        <script type="text/javascript" src="resources/js/common-js.js"></script>        
+        <!--<script type="text/javascript" src="resources/js/employee.js"></script>-->
+        <script>checkSession(myStatus);</script>
+    </head>
+    <body class="hold-transition sidebar-mini" onload="javascript: resetData(); listHighlight(hdPageId);">
+        <div class="wrapper">
+            <div id="hrNavBar"> </div>
+            <div class="wrapper">
+
+                <!-- Content Wrapper. Contains page content -->
+                <div class="content-wrapper">
+                    <!-- Content Header (Page header) -->
+                    <section class="content-header">
+                        <div class="container-fluid">
+                            <div class="row mb-2">
+                                <div class="col-sm-6">
+                                    <h1>DataTables</h1>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ol class="breadcrumb float-sm-right">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active">DataTables</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div><!-- /.container-fluid -->
+                    </section>
+
+                    <!-- Main content -->
+                    <section class="content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h3 class="card-title">DataTable with minimal features & hover style</h3>
+                                        </div>
+                                        <!-- /.card-header -->
+                                        <div class="card-body">
+                                            <table id="example2" class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Rendering engine</th>
+                                                        <th>Browser</th>
+                                                        <th>Platform(s)</th>
+                                                        <th>Engine version</th>
+                                                        <th>CSS grade</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>Gecko</td>
+                                                        <td>Firefox 1.5</td>
+                                                        <td>Win 98+ / OSX.2+</td>
+                                                        <td>1.8</td>
+                                                        <td>A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gecko</td>
+                                                        <td>Firefox 2.0</td>
+                                                        <td>Win 98+ / OSX.2+</td>
+                                                        <td>1.8</td>
+                                                        <td>A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gecko</td>
+                                                        <td>Firefox 3.0</td>
+                                                        <td>Win 2k+ / OSX.3+</td>
+                                                        <td>1.9</td>
+                                                        <td>A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gecko</td>
+                                                        <td>Camino 1.0</td>
+                                                        <td>OSX.2+</td>
+                                                        <td>1.8</td>
+                                                        <td>A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gecko</td>
+                                                        <td>Camino 1.5</td>
+                                                        <td>OSX.3+</td>
+                                                        <td>1.8</td>
+                                                        <td>A</td>
+                                                    </tr>
+
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Rendering engine</th>
+                                                        <th>Browser</th>
+                                                        <th>Platform(s)</th>
+                                                        <th>Engine version</th>
+                                                        <th>CSS grade</th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
+                                    <!-- /.card -->
+                                    <!-- /.card -->
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </section>
+                    <!-- /.content -->
+                </div>
+                <!-- /.content-wrapper -->
+                <!-- Control Sidebar -->
+                <aside class="control-sidebar control-sidebar-dark">
+                    <!-- Control sidebar content goes here -->
+                </aside>
+                <!-- /.control-sidebar -->
+            </div>
+            <div id="hrFooter"> </div>
+        </div>
+        <script>loadNavBar(); loadFooter();</script>
+    </body>
+</html>
