@@ -1,0 +1,93 @@
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+        <img src="resources/logo-215x209-30.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light"><b>Power</b>Net</span>
+        <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-10">
+                <p style="font-size: 12px;margin-left:13px">Capacity: <span id="PNTotalCapacityInSideBar"></span></p>
+            </div>
+        </div>
+    </a>
+
+    <div class="sidebar">
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" id="indexNav">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            Home
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" id="componentNav">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Component
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="pnfpage.html" class="nav-link" id="pnfPageNav">
+                                <i class="fas fa-file-import nav-icon"></i>
+                                <p>PowerNet Facade</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pdnpage.html" class="nav-link" id="pdnPageNav">
+                                <i class="fas fa-sitemap nav-icon"></i>
+                                <p>Physical Data Node</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ldnpage.html" class="nav-link" id="ldnPageNav">
+                                <i class="fab fa-linode nav-icon"></i>
+                                <p>Logical Data Node</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>         
+                <li class="nav-item">
+                    <a href="profiledetails.html" class="nav-link" id="profileNav">
+                        <i class="nav-icon fas fa-user-circle"></i>
+                        <p>
+                            Profile Details
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./resources/User Guide - PowerNet.pdf" class="nav-link" target="_blank">
+                        <i class="nav-icon fas fa-info-circle"></i>
+                        <p>
+                            User Guide
+                        </p>
+                    </a>
+                </li>      
+                <li class="nav-item">
+                    <a href="./resources/Admin Guide - PowerNet.pdf" class="nav-link" target="_blank">
+                        <i class="nav-icon fas fa-question-circle"></i>
+                        <p>
+                            Admin Guide
+                        </p>
+                    </a>
+                </li>       
+                <li class="nav-item">
+                    <a href="javascript:logOut()" class="nav-link">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
+                        <p>
+                            Log Out
+                        </p>
+                    </a>
+                </li>                             
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
